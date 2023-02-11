@@ -1,0 +1,86 @@
+algoritmo "Estruturas Condicionais II"
+
+var
+//MEDIA
+    //n1, n2, n3, media: Real
+//IMC
+  //peso, altura, IMC: Real
+//Criança Esperança
+          D, Valor: Inteiro
+inicio
+      //Escreva("Digite a 1º nota: ")
+      //Leia(n1)
+      //Escreva("Digite a 2º nota: ")
+      //Leia(n2)
+      //Escreva("Digite a 3º nota: ")
+      //Leia(n3)
+      //media <- (n1 + n2 + n3)/3
+      //Escreva("A sua media é ", media)
+      
+      //Se(media >= 7.0)entao
+        //   Escreva(" e foi aprovado")
+      //senao
+        // Se(media >= 5) e (media < 7.0)entao
+          // Escreva(" e está em recuperação")
+         //senao
+           //Escreva(" e foi reprovado")
+        //FimSe
+      //FimSe
+      
+      
+//IMC
+    //Escreva("Digite o seu peso: ")
+    //Leia(peso)
+    //Escreva("Digite sua altura: ")
+    //Leia(altura)
+    //IMC <- Int(peso/(altura^2))
+    //Escreva("A sua IMC é de ", IMC)
+    
+    //Se(IMC < 18.5)entao
+      //    Escreva(" e você está na classificação da magreza")
+    //senao
+      //  Se(IMC >= 18.5) e (IMC < 24.9)entao
+         //     Escreva(" e você está na classificação do peso normal")
+      // senao
+             //Se(IMC >= 25.0) e (IMC < 29.9)entao
+             //     Escreva(" e você está na classificação sobrepeso I")
+            // senao
+             //      Se(IMC >= 30.0) e (IMC < 39.9)entao
+             //         Escreva(" e você está na classificação obesidade II")
+             //      senao
+             //            Escreva(" e você está na classificação obesidade grave III")
+             //      FimSe
+              // FimSe
+            // FimSe
+           //FimSe
+
+//Criança Esperança - Escolha Caso
+
+          Escreval("---------------------")
+          Escreval("  Criança Esperança  ")
+          Escreval("---------------------")
+          Escreval(" Muito Obrigado por ajudar  ")
+          Escreval("[1] para doar R$10,00  ")
+          Escreval("[2] para doar R$25,00  ")
+          Escreval("[3] para doar R$50,00  ")
+          Escreval("[4] para doar outros valores ")
+          Escreval("[5] para cancelar  ")
+          Leia(D)
+          Escolha D
+          caso 1
+               Valor <- 10
+          caso 2
+               Valor <- 25
+          caso 3
+               Valor <- 50
+          caso 4
+               Escreva("Qual o valor da doação: R$")
+               Leia(Valor)
+          caso 5
+               Valor <- 0
+       FimEscolha
+       Escreval("--------------------------")
+       Escreval("  SUA DOAÇÃO FOI DE R$", Valor)
+       Escreval("  MUITO OBRIGADO!")
+       Escreval("--------------------------")
+fimalgoritmo
